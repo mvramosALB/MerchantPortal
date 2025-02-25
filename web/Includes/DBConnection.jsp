@@ -29,6 +29,10 @@
                    user = "sa"  password = "sql"/>
 --%>
 
-<sql:setDataSource var = "ALBMOSDB" driver = "com.microsoft.sqlserver.jdbc.SQLServerDriver"
+<%--<sql:setDataSource var = "ALBMOSDB" driver = "com.microsoft.sqlserver.jdbc.SQLServerDriver"
                    url = "jdbc:sqlserver://10.232.236.51;databaseName=MOSQAT"
+                   user = "sa"  password = "@rvin1120"/>--%>
+
+<sql:setDataSource var = "ALBMOSDB" driver = "com.microsoft.sqlserver.jdbc.SQLServerDriver"
+                   url = "jdbc:sqlserver://10.232.236.51;databaseName=MOSQAT;encrypt=true;trustServerCertificate=true;sslProtocol=TLSv1.2"
                    user = "sa"  password = "@rvin1120"/>
